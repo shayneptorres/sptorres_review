@@ -20,6 +20,7 @@ repositories {
 buildscript {
     repositories {
         mavenCentral()
+        jcenter()
     }
     dependencies {
         classpath ("org.junit.platform:junit-platform-gradle-plugin:1.0.0-M4")
@@ -31,7 +32,7 @@ apply plugin: 'org.junit.platform.gradle.plugin'
 
 dependencies {
     // in case JUnit 4 is also needed/wanted
-    compile("junit:junit:4.12")
+    compile "junit:junit:4.12"
     testRuntime("org.junit.vintage:junit-vintage-engine:4.12.0-M4")
 
     testCompile("org.junit.jupiter:junit-jupiter-api:5.0.0-M4")
